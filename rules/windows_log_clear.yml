@@ -1,0 +1,15 @@
+id: BH-WIN-002
+title: Windows event log cleared
+severity: high
+description: Detects the Windows Security log clear event.
+mitre:
+  tactic: Defense Evasion
+  technique: T1070.001
+match:
+  all:
+    - field: event_id
+      op: equals
+      value: '1102'
+evidence:
+  - event_id
+  - user

@@ -1,0 +1,19 @@
+{"timestamp":"2026-10-09T08:00:00Z","host":"WS-01","event_id":"4624","category":"authentication","status":"success","user":"theo","src_ip":"10.10.10.20"}
+{"timestamp":"2026-10-09T08:01:00Z","host":"WS-01","event_id":"4688","process_name":"explorer.exe","parent_process":"userinit.exe","user":"theo"}
+{"timestamp":"2026-10-09T08:05:00Z","host":"DC-01","event_id":"4625","category":"authentication","status":"failed","user":"administrator","src_ip":"203.0.113.55"}
+{"timestamp":"2026-10-09T08:05:12Z","host":"DC-01","event_id":"4625","category":"authentication","status":"failed","user":"administrator","src_ip":"203.0.113.55"}
+{"timestamp":"2026-10-09T08:05:24Z","host":"DC-01","event_id":"4625","category":"authentication","status":"failed","user":"administrator","src_ip":"203.0.113.55"}
+{"timestamp":"2026-10-09T08:05:36Z","host":"DC-01","event_id":"4625","category":"authentication","status":"failed","user":"administrator","src_ip":"203.0.113.55"}
+{"timestamp":"2026-10-09T08:05:48Z","host":"DC-01","event_id":"4625","category":"authentication","status":"failed","user":"administrator","src_ip":"203.0.113.55"}
+{"timestamp":"2026-10-09T08:06:00Z","host":"DC-01","event_id":"4625","category":"authentication","status":"failed","user":"administrator","src_ip":"203.0.113.55"}
+{"timestamp":"2026-10-09T08:10:00Z","host":"VPN-01","event_id":"AUTH_FAIL","category":"authentication","status":"failed","user":"alice","src_ip":"198.51.100.77"}
+{"timestamp":"2026-10-09T08:10:20Z","host":"VPN-01","event_id":"AUTH_FAIL","category":"authentication","status":"failed","user":"bob","src_ip":"198.51.100.77"}
+{"timestamp":"2026-10-09T08:10:40Z","host":"VPN-01","event_id":"AUTH_FAIL","category":"authentication","status":"failed","user":"carol","src_ip":"198.51.100.77"}
+{"timestamp":"2026-10-09T08:11:00Z","host":"VPN-01","event_id":"AUTH_FAIL","category":"authentication","status":"failed","user":"david","src_ip":"198.51.100.77"}
+{"timestamp":"2026-10-09T08:11:20Z","host":"VPN-01","event_id":"AUTH_FAIL","category":"authentication","status":"failed","user":"emma","src_ip":"198.51.100.77"}
+{"timestamp":"2026-10-09T08:12:00Z","host":"WS-02","event_id":"4688","process_name":"powershell.exe","parent_process":"winword.exe","command_line":"powershell.exe -EncodedCommand SQBFAFgAIAAoACcAdwBoAG8AYQBtAGkAJwApAA==","user":"alice"}
+{"timestamp":"2026-10-09T08:15:00Z","host":"WS-02","event_id":"4698","task_name":"UpdaterTelemetry","command_line":"powershell.exe -WindowStyle Hidden -File C:\\Users\\alice\\AppData\\Local\\update.ps1","user":"alice"}
+{"timestamp":"2026-10-09T08:18:00Z","host":"WS-03","event_id":"7045","service_name":"TelemetryAgent","image_path":"C:\\Users\\Public\\agent.exe","user":"SYSTEM"}
+{"timestamp":"2026-10-09T08:20:00Z","host":"DC-01","event_id":"4732","target_group":"Administrators","member_name":"temp-support","user":"administrator"}
+{"timestamp":"2026-10-09T08:22:00Z","host":"DC-01","event_id":"1102","user":"administrator"}
+{"timestamp":"2026-10-09T08:30:00Z","host":"WS-01","event_id":"4624","category":"authentication","status":"success","user":"theo","src_ip":"10.10.10.20"}

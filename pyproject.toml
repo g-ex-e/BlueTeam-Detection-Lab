@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bluehunt-detection-lab"
+version = "1.0.0"
+description = "Defensive detection engineering and threat-hunting lab for normalized security events."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0,<7"]
+
+[project.scripts]
+bluehunt = "bluehunt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

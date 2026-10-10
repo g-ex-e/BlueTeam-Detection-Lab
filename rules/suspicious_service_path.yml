@@ -1,0 +1,18 @@
+id: BH-WIN-006
+title: Service binary launched from user-writable path
+severity: high
+description: Flags new services whose image path references common user-writable or temporary locations.
+mitre:
+  tactic: Persistence
+  technique: T1543.003
+match:
+  all:
+    - field: event_id
+      op: equals
+      value: '7045'
+    - field: image_path
+      op: regex
+      value: '(?i)(\\Users\\|\\Temp\\|\\AppData\\|powershell|cmd\.exe)'
+evidence:
+  - service_name
+  - image_path

@@ -1,0 +1,16 @@
+id: BH-WIN-003
+title: Scheduled task created
+severity: medium
+description: Detects creation of a Windows scheduled task that may be used for persistence or execution.
+mitre:
+  tactic: Persistence
+  technique: T1053.005
+match:
+  all:
+    - field: event_id
+      op: equals
+      value: '4698'
+evidence:
+  - task_name
+  - command_line
+  - user

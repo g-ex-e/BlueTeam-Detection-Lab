@@ -1,0 +1,19 @@
+id: BH-WIN-004
+title: Account added to privileged local group
+severity: high
+description: Detects membership changes affecting a local Administrators group.
+mitre:
+  tactic: Persistence
+  technique: T1098
+match:
+  all:
+    - field: event_id
+      op: in
+      value: ['4732', '4728', '4756']
+    - field: target_group
+      op: regex
+      value: '(?i)(administrators|domain admins|enterprise admins)'
+evidence:
+  - target_group
+  - member_name
+  - user

@@ -1,0 +1,19 @@
+id: BH-WIN-001
+title: Suspicious PowerShell encoded or in-memory execution
+severity: high
+description: Detects PowerShell command lines containing common encoded or in-memory execution indicators.
+mitre:
+  tactic: Execution
+  technique: T1059.001
+match:
+  all:
+    - field: process_name
+      op: regex
+      value: '(?i)(powershell|pwsh)(\.exe)?$'
+    - field: command_line
+      op: regex
+      value: '(?i)(-enc(odedcommand)?\b|frombase64string|invoke-expression|\biex\b)'
+evidence:
+  - process_name
+  - command_line
+  - parent_process

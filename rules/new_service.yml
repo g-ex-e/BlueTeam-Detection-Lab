@@ -1,0 +1,16 @@
+id: BH-WIN-005
+title: New Windows service installed
+severity: medium
+description: Detects installation of a new Windows service, a common persistence mechanism.
+mitre:
+  tactic: Persistence
+  technique: T1543.003
+match:
+  all:
+    - field: event_id
+      op: equals
+      value: '7045'
+evidence:
+  - service_name
+  - image_path
+  - user
